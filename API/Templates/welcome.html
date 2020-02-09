@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Welcome Page
+        </title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <object>
+        <object align="middle"></object>
+        <div class="container" align="center">
+            <div class="jumbotron"  style=" width: 200px;">
+                {% if well %}
+                {% for k in well %}
+                Welcome {{k.NAME}} !!!
+                {% endfor %}
+                {% else %}
+                    <p>
+                        User not exist!!!
+                    </p>
+                {% endif %}
+            </div>
+        </div>
+        </object>
+    </body>
+</html>
